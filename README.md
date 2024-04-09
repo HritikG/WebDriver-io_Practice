@@ -39,3 +39,23 @@ True Open Source
 Compared to many automation tools in the ecosystem, WebdriverIO is a truly open source project that is run with open governance and owned by a non-profit entity called OpenJS Foundation. This legally binds the project to grow and be directed in the interest of all participants. The project team values openness and collaboration and is not driven by monetary interests.
 
 This makes the project independent in how it is being developed and where it is supposed to go. It allows us to provide free 24/7 support in our community channel as we build a sustainable community that supports and learns from each other. Lastly, it gives a lot of opportunities to the people that contribute and engage with the project due to its open governance.
+
+
+Mocha is a feature-rich JavaScript test framework running on Node.js and in the browser, making asynchronous testing simple and fun. Mocha tests run serially, allowing for flexible and accurate reporting, while mapping uncaught exceptions to the correct test cases. Hosted on GitHub.
+
+What does TDD mean?
+TDD is Test Driven Development. This means writing a test that fails because the specified functionality doesn't exist, then writing the simplest code that can make the test pass, then refactoring to remove duplication, etc. You repeat this Red-Green-Refactor loop over and over until you have a complete feature.
+
+What does BDD mean?
+BDD is Behavior Driven Development. This means creating an executable specification that fails because the feature doesn't exist, then writing the simplest code that can make the spec pass. You repeat this until a release candidate is ready to ship.
+
+What's the difference between TDD and BDD?
+Those seem pretty similar, right? They are. The key difference is the scope. TDD is a development practice while BDD is a team methodology. In TDD, the developers write the tests while in BDD the automated specifications are created by users or testers (with developers wiring them to the code under test.)
+
+TDD vs BDD: Testing Styles
+NUnit and MSpec are 2 tools that provide for different styles of developer testing. NUnit promotes the Arrange-Act-Assert style of testing while MSpec requires the Given-When-Then (or Establish context-Because of-It should) style of testing.
+
+BDD Testing Tools
+Some BDD testing tools include Zephyr scale, Concordian, and FitNesse. 
+
+
