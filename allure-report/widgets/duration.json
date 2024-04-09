@@ -1,0 +1,1 @@
+[{"uid":"92f0342dfe69e02c","name":"Searches for 'Hritik' on Google","time":{"start":1712583162670,"stop":1712583165197,"duration":2527},"status":"passed","severity":"normal"},{"uid":"d8ccd83ab5e68619","name":"should login with valid credentials","time":{"start":1712581512624,"stop":1712581517012,"duration":4388},"status":"passed","severity":"normal"}]

@@ -1,0 +1,42 @@
+Webdriver IO Installation:
+ 
+1. Java
+2. Node.js installation
+3. NPM installation
+4. open terminal/command line:
+node -v
+npm -v
+ 
+4. install VSC editor
+ 
+5. webdriver setup and installation commands:
+-- npm init -y
+open the PowerShell by the administrator then write this command "Set-ExecutionPolicy Unrestricted"
+-- npm init wdio
+ 
+//wdio config
+? A project named "e2e" was detected at "C:\Users\Deepak.saraswat\OneDrive - Taazaa Tech Pvt Ltd\Desktop\New folder (2)\e2e", correct? Yes
+? What type of testing would you like to do? E2E Testing - of Web or Mobile Applications
+? Where is your automation backend located? On my local machine  
+? Which environment you would like to automate? Web - web applications in the browser
+? With which browser should we start? Chrome
+? Which framework do you want to use? Mocha (https://mochajs.org/)
+? Do you want to use a compiler? No
+? Do you want WebdriverIO to autogenerate some test files? Yes
+? What should be the location of your spec files? C:\Users\Deepak.saraswat\OneDrive - Taazaa Tech Pvt Ltd\Desktop\New folder (2)\e2e\test\specs\**\*.js
+? Do you want to use page objects (https://martinfowler.com/bliki/PageObject.html)? Yes
+? Where are your page objects located? C:\Users\Deepak.saraswat\OneDrive - Taazaa Tech Pvt Ltd\Desktop\New folder (2)\e2e\test\pageobjects\**\*.js
+? Which reporter do you want to use? spec, junit, allure
+? Do you want to add a plugin to your test setup?
+? Would you like to include Visual Testing to your setup? For more information see https://webdriver.io/docs/visual-testing! No
+? Do you want to add a service to your test setup? devtools
+? Do you want me to run `npm install` Yes
+ 
+ 
+npm run wdio
+npx wdio run .\wdio.conf.js --spec./test/specs/example.e2e.js
+ 
+ 
+//Allure command
+npm install @wdio/allure-reporter --save-dev
+npm install -g allure-commandline --save-dev
