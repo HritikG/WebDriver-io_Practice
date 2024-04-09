@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//*[@id=\"CardInstanceI8QrXEd60K_BlumS5hb0eg\"]/span"
+}

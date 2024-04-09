@@ -40,3 +40,4 @@ npx wdio run .\wdio.conf.js --spec./test/specs/example.e2e.js
 //Allure command
 npm install @wdio/allure-reporter --save-dev
 npm install -g allure-commandline --save-dev
+npm i allure-commandline
