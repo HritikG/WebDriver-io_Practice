@@ -1,5 +1,6 @@
 class blazePage {
-    get parent() { return $('//*[@id="block-secondarynavigation"]/ul') }
+
+    get parent() { return $('//*[@id="block-mainnavigationmegamenu"]/ul') }
 
     get childElements() {
         return this.parent.$$('li');
@@ -17,6 +18,7 @@ class blazePage {
         return textArray;
     }
     
+
 
 };
 
