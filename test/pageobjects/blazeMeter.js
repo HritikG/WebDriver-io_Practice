@@ -6,19 +6,17 @@ class blazePage {
         return this.parent.$$('li');
     }
 
-
-    get getTextForLi() {
+    async getTextForLi() {
         const textArray = [];
-        const elements = this.childElements;
+        const elements = await this.childElements;
+
         for (let i = 0; i < elements.length; i++) {
-            const text = elements[i].getText();
+            const text = await elements[i].getText();
             console.log(text);
             textArray.push(text);
         }
         return textArray;
     }
-    
-
 
 };
 

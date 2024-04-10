@@ -4,7 +4,8 @@ describe("Blaze page Navbar", function () {
     [
         it("Get texts of all main links", async function () {
             await browser.url('https://www.blazemeter.com');
-            blazePage.getTextForLi;
+            const linkTexts = await blazePage.getTextForLi();
+            console.log(linkTexts);
         })
     ]
 })
