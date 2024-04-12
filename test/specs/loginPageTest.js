@@ -1,20 +1,44 @@
-const loginPage = require("../pageobjects/loginPage");
+// import LoginPage from '../pageobjects/loginPage.js'
+// const LoginPage = require("../pageobjects/loginPage.js");
+const assert = require('assert');
 
-describe("login",function(){
-    it("Enter Username",async function(){
-        browser.url('https://the-internet.herokuapp.com/login');
-        loginPage.enterUserName('tomsmith');
-        await assert.equal('tomsmith',loginPage.username.getValue());
+
+
+describe("login", async function () {
+    it("Enter Username", async function () {
+        await browser.url('https://the-internet.herokuapp.com/login');
+        await LoginPage.enterUserName('tomsmith');
+        await LoginPage.enterPassword('SuperSecretPassword!');
+        await LoginPage.clickOnLogin();
+        await browser.pause(2000);
+
+        //Is Existing
+        const element = await LoginPage.element;
+        console.log(await element.isExisting());
+
     })
 
-    it("Enter Pass", async function(){
-        loginPage.enterPassword('SuperSecretPassword!');
-        await assert.equal('SuperSecretPassword!',loginPage.password.getValue());
+    it.skip('isDisplayed', async function () {
+        await browser.url('https://the-internet.herokuapp.com/broken_images');
+        const element2 = await LoginPage.element2;
+
+        console.log(await element2.isExisting());
+
     })
 
-    it("Click Button", async function(){
-        await loginPage.btn();
-    })
+    it.only('should validate a broken image', async () => {
+        await browser.url('https://the-internet.herokuapp.com/broken_images');
+        const image = await $('img[src="asdf.jpg"]');
+        const isBroken = browser.execute(function(img) {
+            return ! img.complete || img.naturalWidth === 0;
+        }, image);
+        
+    try{
+    assert.strictEqual(isBroken,true);
+    console.log("Image Broken");
+    }catch{
+        console.log("Image is complete");
+    }
 
-
+   });
 });
