@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"elements\"]/button\"}\n  (Session info: chrome=123.0.6312.123)",
+  "stacktrace": "\tGetHandleVerifier [0x00007FF688BE7032+63090]\n\t(No symbol) [0x00007FF688B52C82]\n\t(No symbol) [0x00007FF6889EEC65]\n\t(No symbol) [0x00007FF688A3499D]\n\t(No symbol) [0x00007FF688A34ADC]\n\t(No symbol) [0x00007FF688A75B37]\n\t(No symbol) [0x00007FF688A5701F]\n\t(No symbol) [0x00007FF688A73412]\n\t(No symbol) [0x00007FF688A56D83]\n\t(No symbol) [0x00007FF688A283A8]\n\t(No symbol) [0x00007FF688A29441]\n\tGetHandleVerifier [0x00007FF688FE25AD+4238317]\n\tGetHandleVerifier [0x00007FF68901F70D+4488525]\n\tGetHandleVerifier [0x00007FF6890179EF+4456495]\n\tGetHandleVerifier [0x00007FF688CC0576+953270]\n\t(No symbol) [0x00007FF688B5E54F]\n\t(No symbol) [0x00007FF688B59224]\n\t(No symbol) [0x00007FF688B5935B]\n\t(No symbol) [0x00007FF688B49B94]\n\tBaseThreadInitThunk [0x00007FF858E47344+20]\n\tRtlUserThreadStart [0x00007FF85A3426B1+33]\n"
+}

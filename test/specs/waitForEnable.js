@@ -1,25 +1,22 @@
-const assert = require('assert');
-
-describe('Button Enable/Disable', async function () {
+describe('Button Enable/Disable', () => {
     const url = 'https://classic.freecrm.com/register/';
-    beforeEach(async function () {
-        await browser.url(url);
+
+    beforeEach(() => {
+        browser.url(url);
     });
 
-    it('should wait for button to enable after checkbox click', async function () {
+    it('should toggle submit button state with checkbox click', async () => {
         const checkBox = $("//input[@name='agreeTerms']");
         const submitBtn = $('#submitButton');
+        
         await checkBox.click();
-        await submitBtn.waitForEnabled(4000);
-        assert.equal(true, await submitBtn.isEnabled());
+        await submitBtn.waitForEnabled({ timeout: 4000 });
+        
+        expect(await submitBtn.isEnabled()).toBeTruthy();
+        
+        await checkBox.click();
+        await submitBtn.waitForEnabled({ timeout: 4000, reverse: true });
+        
+        expect(await submitBtn.isEnabled()).toBeFalsy();
     });
-
-    it('should wait for button to disable after checkbox unclick', async function () {
-        const checkBox = $("//input[@name='agreeTerms']");
-        const submitBtn = $('#submitButton');
-        await checkBox.click();
-        await submitBtn.waitForEnabled(4000);
-        assert.equal(true, await submitBtn.isEnabled());
-        await checkBox.click();
-    })
-})
+});
