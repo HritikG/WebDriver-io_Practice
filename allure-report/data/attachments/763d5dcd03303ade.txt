@@ -1,0 +1,9 @@
+{
+  "script": "return ((elem)=>{\r\n            elem.style.backgroundColor ='yellow';\r\n        }).apply(null, arguments)",
+  "args": [
+    {
+      "element-6066-11e4-a52e-4f735466cecf": "f.12B9263D6C06F0A24E053E9405457B59.d.AA043570EA9CC5E9F9DC15C86DE8995B.e.98",
+      "ELEMENT": "f.12B9263D6C06F0A24E053E9405457B59.d.AA043570EA9CC5E9F9DC15C86DE8995B.e.98"
+    }
+  ]
+}

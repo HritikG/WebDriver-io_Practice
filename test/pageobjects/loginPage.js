@@ -2,10 +2,7 @@ class LoginPage {
     get username() { return $('#username') };
     get password() { return $('#password') };
     get btn() { return $('button[type="submit"]') };
-    // get element(){ return $('//*[@id="content"]/div/h2/text()')}
-    // get element2(){return $('//*[@id="content"]/div/img[1]')}
 
-    
     async enterUserName(text) {
         // await this.username.waitForDisplayed();
         await this.username.setValue(text);

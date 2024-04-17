@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id=\"CardInstanceYv4T2RJSIuxEHtIq6FnpVA\"]\"}\n  (Session info: chrome=123.0.6312.106)",
+  "stacktrace": "\tGetHandleVerifier [0x00007FF68CB77072+63090]\n\t(No symbol) [0x00007FF68CAE2CC2]\n\t(No symbol) [0x00007FF68C97EC65]\n\t(No symbol) [0x00007FF68C9C499D]\n\t(No symbol) [0x00007FF68C9C4ADC]\n\t(No symbol) [0x00007FF68CA05B37]\n\t(No symbol) [0x00007FF68C9E701F]\n\t(No symbol) [0x00007FF68CA03412]\n\t(No symbol) [0x00007FF68C9E6D83]\n\t(No symbol) [0x00007FF68C9B83A8]\n\t(No symbol) [0x00007FF68C9B9441]\n\tGetHandleVerifier [0x00007FF68CF725CD+4238285]\n\tGetHandleVerifier [0x00007FF68CFAF72D+4488493]\n\tGetHandleVerifier [0x00007FF68CFA7A0F+4456463]\n\tGetHandleVerifier [0x00007FF68CC505B6+953270]\n\t(No symbol) [0x00007FF68CAEE58F]\n\t(No symbol) [0x00007FF68CAE9264]\n\t(No symbol) [0x00007FF68CAE939B]\n\t(No symbol) [0x00007FF68CAD9BD4]\n\tBaseThreadInitThunk [0x00007FF858E47344+20]\n\tRtlUserThreadStart [0x00007FF85A3426B1+33]\n"
+}
