@@ -59,8 +59,8 @@ exports.config = {
         'goog:chromeOptions': {
             args: [
                 //'--headless', '--disable-gpu',
-                '--window-size=1920,1080',
-                '--start-fullscreen',
+                // '--window-size=1920,1080',
+                // '--start-fullscreen',
             ],
             prefs: {
                 directory_upgrade: true,
@@ -140,8 +140,12 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec', ['allure', { outputDir: 'allure-results' }]],
-
+    // reporters: ['spec', ['allure', { outputDir: 'allure-results' }]],
+    reporters: [['allure', {
+        outputDir: 'allure-results',
+        disableWebdriverStepsReporting: false,
+        disableWebdriverScreenshotsReporting: false,
+    }]],
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
     mochaOpts: {

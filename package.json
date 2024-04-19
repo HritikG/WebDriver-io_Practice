@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    
     "@wdio/allure-reporter": "^8.34.0",
     "@wdio/cli": "^8.35.1",
     "@wdio/devtools-service": "^8.35.1",
